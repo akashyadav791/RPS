@@ -2,6 +2,7 @@
 import { useLeaderboard } from '../hooks/useLeaderboard'
 import { FaTrophy, FaMedal, FaAward } from 'react-icons/fa'
 import LoadingSpinner from '../components/LoadingSpinner'
+import AdBanner from '../components/AdBanner'
 
 const Leaderboard = () => {
   const { leaderboard, loading, error } = useLeaderboard()
@@ -144,6 +145,9 @@ const Leaderboard = () => {
             </div>
           )}
         </div>
+
+        {/* Google AdSense Banner */}
+        <AdBanner slot="YOUR_AD_SLOT_ID" format="horizontal" />
       </div>
     </div>
   )

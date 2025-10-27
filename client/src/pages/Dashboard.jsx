@@ -4,6 +4,7 @@ import StatCard from '../components/StatCard'
 import { FaTrophy, FaGamepad, FaFire, FaChartLine } from 'react-icons/fa'
 import { GiPodium } from 'react-icons/gi'
 import { useGameHistory } from '../hooks/useGameHistory'
+import InFeedAd from '../components/InFeedAd'
 
 const Dashboard = () => {
   const { currentUser, userStats } = useAuth()
@@ -89,6 +90,9 @@ const Dashboard = () => {
             color="blue"
           />
         </div>
+
+        {/* Google AdSense - In-Feed Ad */}
+        <InFeedAd slot="YOUR_AD_SLOT_ID" />
 
         {/* Detailed Stats */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 animate-slide-up">

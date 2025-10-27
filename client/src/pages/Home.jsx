@@ -4,6 +4,7 @@ import { useAuth } from '../contexts/AuthContext'
 import { useOnlinePlayers } from '../hooks/useOnlinePlayers'
 import { FaGamepad, FaTrophy, FaChartLine } from 'react-icons/fa'
 import { IoSparkles } from 'react-icons/io5'
+import AdBanner from '../components/AdBanner'
 
 const Home = () => {
   const { currentUser } = useAuth()
@@ -89,6 +90,9 @@ const Home = () => {
             )} players online
           </p>
         </div>
+
+        {/* Google AdSense Banner */}
+        <AdBanner slot="YOUR_AD_SLOT_ID" format="horizontal" />
       </div>
     </div>
   )
