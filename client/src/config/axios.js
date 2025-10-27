@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // Configure axios defaults
-axios.defaults.baseURL = 'http://localhost:5000'
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || 'https://rps-batz.onrender.com'
 axios.defaults.headers.common['Content-Type'] = 'application/json'
 
 // Add request interceptor to include auth token
