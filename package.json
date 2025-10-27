@@ -1,0 +1,15 @@
+{
+  "name": "rps-game-root",
+  "version": "1.0.0",
+  "description": "Rock Paper Scissors - Professional Edition",
+  "scripts": {
+    "setup": "powershell -ExecutionPolicy Bypass -File setup.ps1",
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build:client": "cd client && npm run build"
+  },
+  "keywords": ["rock", "paper", "scissors", "game", "react", "node", "express", "mongodb"],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,10 @@
+.eslintrc.cjs
+.DS_Store
+dist
+dist-ssr
+*.local
+node_modules
+.env
+.env.local
+.env.production
+.env.development
